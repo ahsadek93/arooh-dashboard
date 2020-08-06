@@ -4,6 +4,17 @@ import AppDashboardSideview from "../components/AppDashboardSideview";
 import AppSmallLineChart from "../components/AppSmallLineChart";
 import AppDashboardCard from "../components/AppDashboardCard";
 import AppDashboardColoredCard from "../components/AppDashboardColoredCard";
+import AppProjectCard from "../components/AppProjectCard";
+
+import projectImg from "./../assets/sideView01.png";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFilter,
+  faPen,
+  faTrash,
+  faEllipsisV,
+} from "@fortawesome/free-solid-svg-icons";
 
 import { Icon } from "@iconify/react";
 import tachometerAlt from "@iconify/icons-fa-solid/tachometer-alt";
@@ -69,98 +80,220 @@ class Dashboard extends Component {
             {
               label: "Response Rate",
               data: [375, 125],
-              backgroundColor: ["#5E2CED", "wheat"],
+              backgroundColor: ["#5E2CED", "#CC112B"],
             },
           ],
         },
 
         {
           type: "Doughnut",
-          labels: ["Positive Answers", "Negative Answers", "Total Answers"],
+          labels: ["Positive", "Negative", "Total Answers"],
           datasets: [
             {
               label: "Satisfaction Rate",
-              data: [375, 125],
-              backgroundColor: ["#5E2CED", "wheat"],
+              data: [200, 20],
+              backgroundColor: ["#5E2CED", "#CC112B"],
             },
           ],
         },
       ],
 
       appColoredCard: [
-          {
-              title:'Retail',
-              subtitle01:'Visitors',
-              value01: 500,
-              subtitle02:'Feed',
-              value02: 15,
-              cardValue: 15,
-              valueLabel:'projects',
-              color:'bg-primary'
+        {
+          title: "Retail",
+          subtitle01: "Visitors",
+          value01: 500,
+          subtitle02: "Feed",
+          value02: 15,
+          cardValue: 15,
+          valueLabel: "projects",
+          color: "bg-primary",
+        },
+        {
+          title: "Food",
+          subtitle01: "Visitors",
+          value01: 500,
+          subtitle02: "Feed",
+          value02: 15,
+          cardValue: 15,
+          valueLabel: "projects",
+          color: "bg-success",
+        },
+        {
+          title: "Education",
+          subtitle01: "Visitors",
+          value01: 500,
+          subtitle02: "Feed",
+          value02: 15,
+          cardValue: 15,
+          valueLabel: "projects",
+          color: "bg-secondary",
+        },
+        {
+          title: "Entertainment",
+          subtitle01: "Visitors",
+          value01: 500,
+          subtitle02: "Feed",
+          value02: 15,
+          cardValue: 15,
+          valueLabel: "projects",
+          color: "bg-warning",
+        },
+        {
+          title: "Printing",
+          subtitle01: "Visitors",
+          value01: 500,
+          subtitle02: "Feed",
+          value02: 15,
+          cardValue: 15,
+          valueLabel: "projects",
+          color: "bg-info",
+        },
+        {
+          title: "Advertising",
+          subtitle01: "Visitors",
+          value01: 500,
+          subtitle02: "Feed",
+          value02: 15,
+          cardValue: 15,
+          valueLabel: "projects",
+          color: "bg-dark",
+        },
+        {
+          title: "All",
+          subtitle01: "Visitors",
+          value01: 500,
+          subtitle02: "Feed",
+          value02: 15,
+          cardValue: 80,
+          valueLabel: "projects",
+          color: "bg-white text-dark",
+        },
+      ],
 
+      appProjectCardData: [
+        {
+          hasPic: false,
+          pic: "Pic",
+          name: "Name",
+          date: "Date",
+          catagory: "Catagory",
+          catagoryColor: "",
+          state: "State",
+          stateColor:'',
+          action: "Action",
+        },
+        
+        {
+          hasPic: true,
+          pic: projectImg,
+          name: "Project Name",
+          date: "27/07/2020",
+          catagory: "Retail",
+          catagoryColor: "text-primary",
+          state: "Active",
+          stateColor:'text-success',
+          action: (
+            <div>
+              <FontAwesomeIcon className="mx-1 mx-md-2" icon={faPen} />
+              <FontAwesomeIcon className="mx-1 mx-md-2" icon={faTrash} />
+              <FontAwesomeIcon className="mx-1 mx-md-2" icon={faEllipsisV} />
+            </div>
+          ),
+        },
+
+        {
+            hasPic: true,
+            pic: projectImg,
+            name: "Project Name",
+            date: "27/07/2020",
+            catagory: "Food",
+            catagoryColor: "text-success",
+            state: "Inactive",
+            stateColor:'text-danger',
+            action: (
+              <div>
+                <FontAwesomeIcon className="mx-1 mx-md-2" icon={faPen} />
+                <FontAwesomeIcon className="mx-1 mx-md-2" icon={faTrash} />
+                <FontAwesomeIcon className="mx-1 mx-md-2" icon={faEllipsisV} />
+              </div>
+            ),
           },
-          {
-            title:'Food',
-            subtitle01:'Visitors',
-            value01: 500,
-            subtitle02:'Feed',
-            value02: 15,
-            cardValue: 15,
-            valueLabel:'projects',
-            color:'bg-success'
 
-        },
-        {
-            title:'Education',
-            subtitle01:'Visitors',
-            value01: 500,
-            subtitle02:'Feed',
-            value02: 15,
-            cardValue: 15,
-            valueLabel:'projects',
-            color: 'bg-secondary'
-        },
-        {
-            title:'Entertainment',
-            subtitle01:'Visitors',
-            value01: 500,
-            subtitle02:'Feed',
-            value02: 15,
-            cardValue: 15,
-            valueLabel:'projects',
-            color: 'bg-warning'
-        },
-        {
-            title:'Printing',
-            subtitle01:'Visitors',
-            value01: 500,
-            subtitle02:'Feed',
-            value02: 15,
-            cardValue: 15,
-            valueLabel:'projects',
-            color:'bg-info'
-        },
-        {
-            title:'Advertising',
-            subtitle01:'Visitors',
-            value01: 500,
-            subtitle02:'Feed',
-            value02: 15,
-            cardValue: 15,
-            valueLabel:'projects',
-            color:'bg-dark'
-        },
-        {
-            title:'All',
-            subtitle01:'Visitors',
-            value01: 500,
-            subtitle02:'Feed',
-            value02: 15,
-            cardValue: 80,
-            valueLabel:'projects',
-            color:'bg-white text-dark'
-        },
-      ]
+          {
+            hasPic: true,
+            pic: projectImg,
+            name: "Project Name",
+            date: "27/07/2020",
+            catagory: "Education",
+            catagoryColor: "text-secondary",
+            state: "Active",
+            stateColor:'text-success',
+            action: (
+              <div>
+                <FontAwesomeIcon className="mx-1 mx-md-2" icon={faPen} />
+                <FontAwesomeIcon className="mx-1 mx-md-2" icon={faTrash} />
+                <FontAwesomeIcon className="mx-1 mx-md-2" icon={faEllipsisV} />
+              </div>
+            ),
+          },
+
+          {
+            hasPic: true,
+            pic: projectImg,
+            name: "Project Name",
+            date: "27/07/2020",
+            catagory: "Entertainment",
+            catagoryColor: "text-warning",
+            state: "Active",
+            stateColor:'text-success',
+            action: (
+              <div>
+                <FontAwesomeIcon className="mx-1 mx-md-2" icon={faPen} />
+                <FontAwesomeIcon className="mx-1 mx-md-2" icon={faTrash} />
+                <FontAwesomeIcon className="mx-1 mx-md-2" icon={faEllipsisV} />
+              </div>
+            ),
+          },
+
+
+          {
+            hasPic: true,
+            pic: projectImg,
+            name: "Project Name",
+            date: "27/07/2020",
+            catagory: "Printing",
+            catagoryColor: "text-info",
+            state: "Active",
+            stateColor:'text-success',
+            action: (
+              <div>
+                <FontAwesomeIcon className="mx-1 mx-md-2" icon={faPen} />
+                <FontAwesomeIcon className="mx-1 mx-md-2" icon={faTrash} />
+                <FontAwesomeIcon className="mx-1 mx-md-2" icon={faEllipsisV} />
+              </div>
+            ),
+          },
+
+          {
+            hasPic: true,
+            pic: projectImg,
+            name: "Project Name",
+            date: "27/07/2020",
+            catagory: "Retail",
+            catagoryColor: "text-primary",
+            state: "Active",
+            stateColor:'text-success',
+            action: (
+              <div>
+                <FontAwesomeIcon className="mx-1 mx-md-2" icon={faPen} />
+                <FontAwesomeIcon className="mx-1 mx-md-2" icon={faTrash} />
+                <FontAwesomeIcon className="mx-1 mx-md-2" icon={faEllipsisV} />
+              </div>
+            ),
+          },
+        
+      ],
     };
   }
 
@@ -218,15 +351,27 @@ class Dashboard extends Component {
                       <h5 className="text-primary">Projects</h5>
                     </div>
                     <div className="col-12">
-                        <div className="row justify-content-center justify-content-md-start">
-                            {
-                                this.state.appColoredCard.map((singleCard, i)=>(
-                                    <AppDashboardColoredCard cardData={singleCard} />
-
-                                ))
-                            }
-                        </div>
+                      <div className="row justify-content-center justify-content-md-start">
+                        {this.state.appColoredCard.map((singleCard, i) => (
+                          <AppDashboardColoredCard cardData={singleCard} />
+                        ))}
+                      </div>
                     </div>
+                  </div>
+
+                  <div className="row pb-5 mb-5">
+                    <div className="col-12">
+                      <div className="row justify-content-end">
+                        <div className="btn px-2 card">
+                          <span>
+                            Filter <FontAwesomeIcon icon={faFilter} />
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    {this.state.appProjectCardData.map((singleCard, i) => (
+                      <AppProjectCard cardData={singleCard} />
+                    ))}
                   </div>
                 </div>
               </div>

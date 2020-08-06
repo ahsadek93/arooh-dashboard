@@ -101,13 +101,13 @@ class AppDashboardCard extends Component {
                   <div className="col-12 col-lg-6">
                     {this.props.chartData.labels[1]}
                   </div>
-                  <div className="col-12 col-lg-6 text-primary">{this.props.chartData.datasets[0].data[1]}</div>
+                  <div className="col-12 col-lg-6 text-secondary">{this.props.chartData.datasets[0].data[1]}</div>
                 </div>
                 <div className="row my-3">
                   <div className="col-12 col-lg-6">
                     {this.props.chartData.labels[2]}
                   </div>
-                  <div className="col-12 col-lg-6 text-primary">{this.props.chartData.datasets[0].data[0] + this.props.chartData.datasets[0].data[1]}</div>
+                  <div className="col-12 col-lg-6 text-info">{this.props.chartData.datasets[0].data[0] + this.props.chartData.datasets[0].data[1]}</div>
                 </div>
               </div>
               <div className="col-4">

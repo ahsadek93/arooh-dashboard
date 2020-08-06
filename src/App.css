@@ -70,4 +70,10 @@ body {
 canvas {
   align-self: center; }
 
+input {
+  border: none; }
+
+ul {
+  list-style: none; }
+
 /*# sourceMappingURL=App.css.map */
