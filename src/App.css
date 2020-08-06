@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
+.bg-primary {
+  background-color: #5E2CED !important; }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.bg-secondary {
+  background-color: #CC112B !important; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.text-primary {
+  color: #5E2CED !important; }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.text-secondary {
+  color: #CC112B !important; }
 
-.App-link {
-  color: #61dafb;
-}
+*,
+html,
+body {
+  font-family: "Poppins", sans-serif; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.bg-black {
+  background-color: #111111; }
+
+.nav-link {
+  text-decoration: none;
+  color: white; }
+
+.appDashboardNav {
+  position: fixed;
+  height: auto; }
+  @media (min-width: 768px) {
+    .appDashboardNav {
+      height: 100vh; } }
+
+.appDashboardSideview {
+  position: relative;
+  height: auto; }
+  @media (min-width: 768px) {
+    .appDashboardSideview {
+      position: fixed;
+      height: 100vh;
+      right: 0; } }
+
+.active {
+  background-color: white;
+  color: black;
+  border-radius: 0; }
+  @media (min-width: 768px) {
+    .active {
+      border-radius: 48px 0px 0px 48px; } }
+
+.collapse {
+  display: block; }
+  @media (min-width: 768px) {
+    .collapse {
+      display: block !important; } }
+
+.content-body-marginX {
+  margin-left: 0; }
+  @media (min-width: 768px) {
+    .content-body-marginX {
+      margin-left: 17vw;
+      margin-right: 17vw; } }
+.content-body-marginY {
+  margin-top: 12vh; }
+  @media (min-width: 768px) {
+    .content-body-marginY {
+      margin-top: 0; } }
+
+.card {
+  box-shadow: 2px 4px 8px #00000029; }
+
+canvas {
+  align-self: center; }
+
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,107 @@
+$color-primary: #5E2CED;
+$color-secondary: #CC112B;
+
+.bg-primary {
+  background-color: $color-primary !important;
+}
+
+
+.bg-secondary {
+  background-color: $color-secondary !important;
+}
+
+.text-primary {
+  color: $color-primary !important;
+}
+
+.text-secondary {
+  color: $color-secondary !important;
+}
+
+*,
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.bg-black {
+  background-color: #111111;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.appDashboardNav
+ {
+  position: fixed;
+  height: auto;
+
+  @media (min-width: 768px) {
+    height: 100vh;
+  }
+}
+
+.appDashboardSideview {
+  position: relative;
+  height: auto;
+
+  @media (min-width: 768px) {
+    position: fixed;
+    height: 100vh;
+    right: 0;
+  }
+}
+
+.active {
+  background-color: white;
+  color: black;
+  border-radius: 0;
+
+  @media (min-width: 768px) {
+    border-radius: 48px 0px 0px 48px;
+  }
+}
+
+.collapse {
+  display: block;
+
+  @media (min-width: 768px) {
+    display: block !important;
+  }
+}
+
+
+.content-body {
+
+    &-marginX {
+
+        margin-left:0;
+    
+        @media (min-width: 768px) {
+            margin-left:17vw ;
+            margin-right:17vw ;
+    
+        }
+    }
+
+    &-marginY {
+
+        margin-top: 12vh;
+    
+        @media (min-width: 768px) {
+            margin-top: 0;
+        }
+    }
+
+
+}
+
+.card {
+  box-shadow: 2px 4px 8px #00000029;
+}
+
+canvas {
+  align-self: center;
+}
