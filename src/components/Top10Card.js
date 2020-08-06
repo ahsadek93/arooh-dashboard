@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisV } from "@fortawesome/free-solid-svg-icons";
-import projectImg from "../assets/sideView01.png";
+
 
 import {Doughnut } from "react-chartjs-2";
 
@@ -14,7 +14,7 @@ class Top10Card extends Component {
           <div className="col-12">
               <div className="row justify-content-center">
                   <div className="col-12 text-center">
-                    <img src={projectImg} alt="projectImg" className="img-fluid"/>
+                    <img src={this.props.chartData.img} alt="projectImg" className="img-fluid"/>
                   </div>
               </div>
               <div className="row justify-content-end">
