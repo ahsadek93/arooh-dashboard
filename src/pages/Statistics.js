@@ -3,6 +3,10 @@ import AppDashboardNav from "../components/AppDashboardNav";
 import AppDashboardSideview from "../components/AppDashboardSideview";
 import AppBigGraph from "../components/AppBigGraph";
 import AppDashboardCard from "../components/AppDashboardCard";
+import Top10Card from "../components/Top10Card";
+
+import projectImg from "../assets/sideView01.png";
+
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartLine } from "@fortawesome/free-solid-svg-icons";
@@ -171,7 +175,7 @@ class Statistics extends Component {
         ],
       },
 
-      satisficationRateCard :      {
+      satisficationRateCard: {
         type: "Doughnut",
         labels: ["Positive", "Negative", "Total Answers"],
         datasets: [
@@ -183,7 +187,7 @@ class Statistics extends Component {
         ],
       },
 
-      feedbackCard :      {
+      feedbackCard: {
         type: "Pie",
         labels: ["Positive", "Negative"],
         datasets: [
@@ -195,29 +199,153 @@ class Statistics extends Component {
         ],
       },
 
-      positiveCard :      {
+      positiveCard: {
         type: "Pie",
-        labels: ["Reason 1", "Reason 2", 'Reason 3'],
+        labels: ["Reason 1", "Reason 2", "Reason 3"],
         datasets: [
           {
             label: "Satisfaction Rate",
-            data: [50, 40 , 30],
-            backgroundColor: ["#5E2CED", "#8F6EEC" , '#AB94EC'],
+            data: [50, 40, 30],
+            backgroundColor: ["#5E2CED", "#8F6EEC", "#AB94EC"],
           },
         ],
       },
 
-      negativeCard :      {
+      negativeCard: {
         type: "Pie",
-        labels: ["Reason 1", "Reason 2", 'Reason 3'],
+        labels: ["Reason 1", "Reason 2", "Reason 3"],
         datasets: [
           {
             label: "Satisfaction Rate",
-            data: [50, 40 , 30],
-            backgroundColor: ["#CC112B", "#D4475B" , '#DB7D8A'],
+            data: [50, 40, 30],
+            backgroundColor: ["#CC112B", "#D4475B", "#DB7D8A"],
           },
         ],
       },
+
+      top10: [
+        {
+            type: "Doughnut",
+            img:projectImg,
+            labels: ["Answered", "Didn't Answer", "Total Visitors"],
+            datasets: [
+              {
+                label: "Response Rate",
+                data: [375, 125],
+                backgroundColor: ["#5E2CED", "#CC112B"],
+              },
+            ],
+          },
+          
+          {
+            type: "Doughnut",
+            img:projectImg,
+            labels: ["Answered", "Didn't Answer", "Total Visitors"],
+            datasets: [
+              {
+                label: "Response Rate",
+                data: [375, 125],
+                backgroundColor: ["#5E2CED", "#CC112B"],
+              },
+            ],
+          },
+          {
+            type: "Doughnut",
+            img:projectImg,
+            labels: ["Answered", "Didn't Answer", "Total Visitors"],
+            datasets: [
+              {
+                label: "Response Rate",
+                data: [375, 125],
+                backgroundColor: ["#5E2CED", "#CC112B"],
+              },
+            ],
+          },
+          {
+            type: "Doughnut",
+            img:projectImg,
+            labels: ["Answered", "Didn't Answer", "Total Visitors"],
+            datasets: [
+              {
+                label: "Response Rate",
+                data: [375, 125],
+                backgroundColor: ["#5E2CED", "#CC112B"],
+              },
+            ],
+          },
+          {
+            type: "Doughnut",
+            img:projectImg,
+            labels: ["Answered", "Didn't Answer", "Total Visitors"],
+            datasets: [
+              {
+                label: "Response Rate",
+                data: [375, 125],
+                backgroundColor: ["#5E2CED", "#CC112B"],
+              },
+            ],
+          },
+          {
+            type: "Doughnut",
+            img:projectImg,
+            labels: ["Answered", "Didn't Answer", "Total Visitors"],
+            datasets: [
+              {
+                label: "Response Rate",
+                data: [375, 125],
+                backgroundColor: ["#5E2CED", "#CC112B"],
+              },
+            ],
+          },
+          {
+            type: "Doughnut",
+            img:projectImg,
+            labels: ["Answered", "Didn't Answer", "Total Visitors"],
+            datasets: [
+              {
+                label: "Response Rate",
+                data: [375, 125],
+                backgroundColor: ["#5E2CED", "#CC112B"],
+              },
+            ],
+          },
+          {
+            type: "Doughnut",
+            img:projectImg,
+            labels: ["Answered", "Didn't Answer", "Total Visitors"],
+            datasets: [
+              {
+                label: "Response Rate",
+                data: [375, 125],
+                backgroundColor: ["#5E2CED", "#CC112B"],
+              },
+            ],
+          },
+          {
+            type: "Doughnut",
+            img:projectImg,
+            labels: ["Answered", "Didn't Answer", "Total Visitors"],
+            datasets: [
+              {
+                label: "Response Rate",
+                data: [375, 125],
+                backgroundColor: ["#5E2CED", "#CC112B"],
+              },
+            ],
+          },
+          {
+            type: "Doughnut",
+            img:projectImg,
+            labels: ["Answered", "Didn't Answer", "Total Visitors"],
+            datasets: [
+              {
+                label: "Response Rate",
+                data: [375, 125],
+                backgroundColor: ["#5E2CED", "#CC112B"],
+              },
+            ],
+          },
+      ]
     };
   }
 
@@ -407,7 +535,6 @@ class Statistics extends Component {
                               <AppDashboardCard
                                 chartData={this.state.negativeCard}
                               />
-                          
                             </div>
                           </div>
                         </div>
@@ -418,7 +545,22 @@ class Statistics extends Component {
                           role="tabpanel"
                           aria-labelledby="connections-tab"
                         >
-                          <h2>3rd</h2>
+                          <div className="col-12 mt-md-5">
+                            <div className="row justify-content-center">
+                              <AppBigGraph
+                                graphData={this.state.newVisitorsGraph}
+                              />
+                            </div>
+                          </div>
+
+                          <div className="col-12 my-4">
+                            <div className="row">
+                              <AppDashboardCard
+                                chartData={this.state.converstionRateCard}
+                              />
+                              
+                            </div>
+                          </div>
                         </div>
 
                         <div
@@ -427,7 +569,18 @@ class Statistics extends Component {
                           role="tabpanel"
                           aria-labelledby="top10-tab"
                         >
-                          <h2>4th</h2>
+                          <div className="row">
+                              <div className="col-12">
+                                <div className="row">
+                                    {
+                                        this.state.top10.map((singleCard, i)=>(
+                                            <Top10Card chartData={singleCard} />
+
+                                        ))
+                                    }
+                                </div>
+                              </div>
+                          </div>
                         </div>
                       </div>
                     </div>
