@@ -253,6 +253,19 @@ class Settings extends Component {
                                     </div>
                                   </div>
                                 </div>
+
+                                <div className="col-12 card my-2 py-2">
+                                  <div className="row h-100 justify-content-center">
+                                  <div className="align-self-center w-100">
+                                      <div className="row justify-content-center">
+                                        <div className="text-center btn btn-primary">
+                                          Change Plan
+                                        </div>
+                                       
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>

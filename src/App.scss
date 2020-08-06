@@ -1,4 +1,7 @@
 $color-primary: #5E2CED;
+$color-primary-light: #BEAAF8;
+
+
 $color-secondary: #CC112B;
 
 .bg-primary {
@@ -113,4 +116,32 @@ input {
 
 ul {
   list-style: none;
+}
+
+.fade {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: $color-primary !important;
+  color: white !important;
+
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: $color-primary !important;
+    color: white !important;
+  }
+}
+
+
+.btn-primary {
+  background-color: $color-primary !important;
+  color: white !important;
+
 }

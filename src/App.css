@@ -76,4 +76,21 @@ input {
 ul {
   list-style: none; }
 
+.fade {
+  display: none; }
+
+.active {
+  display: block; }
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #5E2CED !important;
+  color: white !important; }
+  .nav-pills .nav-link.active:active, .nav-pills .nav-link.active:focus, .nav-pills .nav-link.active:hover, .nav-pills .show > .nav-link:active, .nav-pills .show > .nav-link:focus, .nav-pills .show > .nav-link:hover {
+    background-color: #5E2CED !important;
+    color: white !important; }
+
+.btn-primary {
+  background-color: #5E2CED !important;
+  color: white !important; }
+
 /*# sourceMappingURL=App.css.map */
