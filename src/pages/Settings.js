@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import AppDashboardNav from "../components/AppDashboardNav";
 import AppDashboardSideview from "../components/AppDashboardSideview";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
 
 class Settings extends Component {
   render() {
@@ -160,13 +162,13 @@ class Settings extends Component {
                         </div>
                       </div>
                     </div>
-                    <div className="col-12 mt-md-5">
+                    <div className="col-12 pb-5 my-md-5">
                       <div className="row">
                         <h5 className="text-primary">Plan</h5>
                         <div className="col-12">
                           <div className="row justify-content-center">
-                            <div className="col-10 col-md-6 p-4">
-                              <div className="row card p-3 h-100">
+                            <div className="col-12 col-md-6 p-0">
+                              <div className="row flex-row card p-3 h-100">
                                 <div className="col-12  my-1">
                                   <div className="row justify-content-around">
                                     <div className="text-muted m-0 col-6">
@@ -211,10 +213,47 @@ class Settings extends Component {
                               </div>
                             </div>
 
-                            <div className="col-10 col-md-6 p-4">
-                                <div className="row card p-3 h-100">
-
+                            <div className="col-12 col-md-6 px-0 px-md-4">
+                              <div className="row justify-content-between px-0 px-md-3 py-0 h-100">
+                                <div className="col-12 card bg-primary my-2 py-2">
+                                  <div className="row h-100 justify-content-center">
+                                    <div className="text-white align-self-center">
+                                      <FontAwesomeIcon icon={faClock} />
+                                      <span className="mx-2">48:09:42</span>
+                                    </div>
+                                  </div>
                                 </div>
+
+                                <div className="col-12 card my-2 py-2">
+                                  <div className="row h-100 justify-content-center">
+                                    <div className="align-self-center w-100">
+                                      <div className="row justify-content-around">
+                                        <span className="text-muted text-center">
+                                          Start Date:
+                                        </span>
+                                        <span className="font-weight-bold text-center mx-2">
+                                          27/07/2020
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className="col-12 card my-2 py-2">
+                                  <div className="row h-100 justify-content-center">
+                                  <div className="align-self-center w-100">
+                                      <div className="row justify-content-around">
+                                        <span className="text-muted text-center">
+                                          End Date:
+                                        </span>
+                                        <span className="font-weight-bold text-center mx-2">
+                                          27/07/2020
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
