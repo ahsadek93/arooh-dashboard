@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/arooh-dashboard/static/css/main.b74147e0.chunk.css",
-    "main.js": "/arooh-dashboard/static/js/main.b249c7a0.chunk.js",
-    "main.js.map": "/arooh-dashboard/static/js/main.b249c7a0.chunk.js.map",
+    "main.js": "/arooh-dashboard/static/js/main.adec1353.chunk.js",
+    "main.js.map": "/arooh-dashboard/static/js/main.adec1353.chunk.js.map",
     "runtime-main.js": "/arooh-dashboard/static/js/runtime-main.ebcf7a18.js",
     "runtime-main.js.map": "/arooh-dashboard/static/js/runtime-main.ebcf7a18.js.map",
     "static/js/2.70ae8cd0.chunk.js": "/arooh-dashboard/static/js/2.70ae8cd0.chunk.js",
     "static/js/2.70ae8cd0.chunk.js.map": "/arooh-dashboard/static/js/2.70ae8cd0.chunk.js.map",
     "index.html": "/arooh-dashboard/index.html",
-    "precache-manifest.a9572abdccc5038b76f9237d5c30fe51.js": "/arooh-dashboard/precache-manifest.a9572abdccc5038b76f9237d5c30fe51.js",
+    "precache-manifest.32a5b2a14522eff98278f44f43e77192.js": "/arooh-dashboard/precache-manifest.32a5b2a14522eff98278f44f43e77192.js",
     "service-worker.js": "/arooh-dashboard/service-worker.js",
     "static/css/main.b74147e0.chunk.css.map": "/arooh-dashboard/static/css/main.b74147e0.chunk.css.map",
     "static/js/2.70ae8cd0.chunk.js.LICENSE.txt": "/arooh-dashboard/static/js/2.70ae8cd0.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.ebcf7a18.js",
     "static/js/2.70ae8cd0.chunk.js",
     "static/css/main.b74147e0.chunk.css",
-    "static/js/main.b249c7a0.chunk.js"
+    "static/js/main.adec1353.chunk.js"
   ]
 }
