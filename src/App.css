@@ -93,4 +93,12 @@ ul {
   background-color: #5E2CED !important;
   color: white !important; }
 
+.form-section-wrapper {
+  border: none; }
+  .form-section-wrapper:hover {
+    border: 1px solid #5E2CED; }
+
+.form-content-wrapper div {
+  width: 100%; }
+
 /*# sourceMappingURL=App.css.map */

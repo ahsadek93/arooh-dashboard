@@ -145,3 +145,16 @@ ul {
   color: white !important;
 
 }
+
+
+.form-section-wrapper {
+  border: none;
+
+  &:hover {
+    border: 1px solid $color-primary;
+  }
+}
+
+.form-content-wrapper div  {
+  width: 100%;
+}

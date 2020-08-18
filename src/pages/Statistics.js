@@ -46,6 +46,37 @@ class Statistics extends Component {
           },
         ],
       },
+      newFBVisitorsGraph: {
+        type: "Bar",
+        labels: [
+          "Jan",
+          "Feb",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ],
+        datasets: [
+          {
+            label: "Total FB Visitors",
+            data: [45, 55, 38, 57, 80, 55, 30, 75, 60, 100, 66, 40],
+            backgroundColor: "#5E2CED",
+            borderColor: "#5E2CED",
+          },
+          {
+            label: "New FB Visitors",
+            data: [40, 20, 30, 40, 50, 33, 22, 50, 52, 30, 45, 10],
+            backgroundColor: "#BEAAF8",
+            borderColor: "#BEAAF8",
+          },
+        ],
+      },
 
       newVisitorCard: {
         type: "Doughnut",
@@ -192,7 +223,7 @@ class Statistics extends Component {
         labels: ["Positive", "Negative"],
         datasets: [
           {
-            label: "Satisfaction Rate",
+            label: "Feedback",
             data: [200, 20],
             backgroundColor: ["#8F6EEC", "#D4475B"],
           },
@@ -204,7 +235,7 @@ class Statistics extends Component {
         labels: ["Reason 1", "Reason 2", "Reason 3"],
         datasets: [
           {
-            label: "Satisfaction Rate",
+            label: "Positive Reasons",
             data: [50, 40, 30],
             backgroundColor: ["#5E2CED", "#8F6EEC", "#AB94EC"],
           },
@@ -216,7 +247,7 @@ class Statistics extends Component {
         labels: ["Reason 1", "Reason 2", "Reason 3"],
         datasets: [
           {
-            label: "Satisfaction Rate",
+            label: "Negative Reasons",
             data: [50, 40, 30],
             backgroundColor: ["#CC112B", "#D4475B", "#DB7D8A"],
           },
@@ -548,7 +579,7 @@ class Statistics extends Component {
                           <div className="col-12 mt-md-5">
                             <div className="row justify-content-center">
                               <AppBigGraph
-                                graphData={this.state.newVisitorsGraph}
+                                graphData={this.state.newFBVisitorsGraph}
                               />
                             </div>
                           </div>

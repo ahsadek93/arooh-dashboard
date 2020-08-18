@@ -4,6 +4,8 @@ import { HashRouter  as Router, Route, Switch } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Statistics from "./pages/Statistics"
 import Settings from "./pages/Settings"
+import CreateForm from "./pages/CreateForm"
+
 
 
 function App() {
@@ -19,6 +21,9 @@ function App() {
           </Route>
           <Route path="/Settings">
             <Settings />
+          </Route>
+          <Route path="/CreateForm">
+            <CreateForm />
           </Route>
         </Switch>
       </Router>
