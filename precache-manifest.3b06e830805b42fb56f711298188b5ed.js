@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a249088d9217a8c24e28593094b13b09",
+    "revision": "7529b827873347d4bc29574e800cc795",
     "url": "/arooh-dashboard/index.html"
   },
   {
-    "revision": "2e5bfb2eb592a00bf565",
+    "revision": "2f908345b38592c66cd5",
     "url": "/arooh-dashboard/static/css/main.b74147e0.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/arooh-dashboard/static/js/2.70ae8cd0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2e5bfb2eb592a00bf565",
-    "url": "/arooh-dashboard/static/js/main.adec1353.chunk.js"
+    "revision": "2f908345b38592c66cd5",
+    "url": "/arooh-dashboard/static/js/main.df7d0ceb.chunk.js"
   },
   {
     "revision": "05b02a953a761c6fc3df",
