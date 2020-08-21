@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/arooh-dashboard/precache-manifest.b0dcdc8d3e96ff61b2197014d224ec31.js"
+  "/arooh-dashboard/precache-manifest.8f619dc01bae9aa1c4e032ac74633903.js"
 );
 
 self.addEventListener('message', (event) => {
